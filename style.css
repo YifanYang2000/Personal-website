@@ -1,0 +1,117 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Unna', serif;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/mereal.png);
+    background-size: cover;
+}
+
+/* Buttons */
+.btn {
+    background-color: #38d1c7;
+    border: none;
+    color: aliceblue;
+    padding: 0px 0px;
+    font-size: 40px;
+  }
+
+.btn2 {
+    background-color: #38d1c7;
+    border: none;
+    color: aliceblue;
+    padding: 0px 10px;
+    font-size: 40px;
+}
+
+.btn:hover {
+    color: RoyalBlue;
+}
+
+.btn2:hover {
+    color: RoyalBlue;
+}
+
+/* Navigation bar */
+#nav {
+  overflow: hidden;
+  background-color: #9ce8e3;
+  /* background-color: #1f736d; */
+}
+
+#nav a {
+  float: right;
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#nav a:hover {
+  color: #38d1c7;
+}
+  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+  /* Positioning */
+.side {
+    float: left;
+    width: 12%;
+    padding: 15px;
+    background-color: #9ce8e3;
+  }
+
+.row_1 {
+    float:left;
+    width: 76%;
+    padding: 15px;
+    background-color: #9ce8e3;
+}
+
+.row_2 {
+    float: left;
+    width: 26%;
+    padding: 15px;
+    background-color: a#9ce8e3;
+}
+
+.row_3 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    background-color: #9ce8e3;
+}
+
+.row_3 {
+    float: left;
+    width: 25.33%;
+    padding: 15px;
+    background-color: #9ce8e3
+}
+
+#title {
+    color: aliceblue;
+    font-size: 90px;
+    padding: 8px 24px;
+    text-align: left;
+}
