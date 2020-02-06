@@ -1,5 +1,5 @@
 # Personal-website
-A personal website that will serve as a way to present myself in further depth; http://yifanyang.netlify.com/
+A personal website that will serve as a way to present myself in further depth
 
 ## Improvements?
 This is still a work in progress. <br />
