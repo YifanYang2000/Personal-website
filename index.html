@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,46 +11,123 @@
     <title>Yifan Yang</title>
 </head>
 <body>
+    <a id="home"></a>
+
+    <div id="nav">
+        <a href=#home>Home</a>
+        <a href=#pro>Projects</a>
+        <a href=#work>Work Experience</a>
+        <a href=#about>About</a>
+    </div>
+
 
     <header id="parallax" class="intro">
-        <p id="title"><br>Software Developer.<br>Innovator.<br>Yifan Yang<br>
-            <a href="https://www.linkedin.com/in/yifan-yang-610962190/" target="_blank"><button class="btn"><i class="fa fa-linkedin"></i></button></a>
-            <a href="https://github.com/YifanYang2000" target="_blank"><button class="btn2"><i class="fa fa-github"></i></button></a>
-            <a href="mailto:yifan.yang@hotmail.ca"><button class="btn2"><i class="fa fa-envelope"></i></button></a>
+        <p id="title">
+            Software Developer.<br>
+            Innovator.<br>
+            Yifan Yang<br>
+            <a href="https://www.linkedin.com/in/yifan-yang-610962190/" title="LinkedIn" target="_blank"><button style="padding-left: 10px;" class="btn"><i class="fa fa-linkedin"></i></button></a>
+            <a href="https://github.com/YifanYang2000" title="GitHub" target="_blank"><button class="btn"><i class="fa fa-github"></i></button></a>
+            <a href="mailto:y753yang@uwaterloo.ca" title="Email"><button class="btn"><i class="fa fa-envelope"></i></button></a>
+            <a href="ResumeYifanYang.pdf" title="Resume" target="_blank"><button class="btn"><i class="fa fa-file-o"></i></button></a>
         </p>
     </header>
 
-    <div id="nav">
-        <div class="side"></div>
-        <div class="row_1">
-            <a href=#volun>Volunteer</a>
-            <a href=#work>Work Experience</a>
-            <a href=#pro>Projects</a>
-            <a href=#about>About</a>
-            <a href=#home>Home</a>
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <img class="slides1 image" src="weather/Initial.png" alt="Inital Screen">
+                <img class="slides1 image" src="weather/Input.png" alt="Input">
+                <img class="slides1 image" src="weather/weather.png" alt="Result Screen">
+                <img class="slides1 image" src="weather/Error.png" alt="Error Screen">
+                  
+                <button onclick="plusDivs(-1, 0)" class="left"><i class="fa fa-arrow-circle-left"></i></button>
+                <button onclick="plusDivs(1, 0)" class="right"><i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+            <div class="des">
+                <h2 id="pro">Project: <span style="color: black;">Weather App</span></h2>
+                <br>
+                <p>This web application uses the openwether.org API in order to return the temperature, windspeed, humidity and the weather
+                    weather conditions..........
+                </p>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <a href="https://github.com/YifanYang2000/Weather-Tracker" target="_blank"><button class="btn_git">Learn more</button></a>
+            </div>
         </div>
-        <div class="side"></div>
     </div>
 
-    
-
-    <div>
-        <div class="side"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-        <div class="row_1"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-        <div class="side"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <br>
+            <br>
+            <hr class="color">
+            <br>
+        </div>
     </div>
+
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <br>
+            <div class="container">
+                <img class="slides2 image" src="pong/initial.png" alt="Start Screen">
+                <img class="slides2 image" src="pong/pong.png" alt="ping">
+
+                <button onclick="plusDivs(-1, 1)" class="left"><i class="fa fa-arrow-circle-left"></i></button>
+                <button onclick="plusDivs(1, 1)" class="right"><i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+            <div class="des">
+                <h2>Project: <span style="color: black;">Pong</span></h2>
+                <br>
+                <p>...</p>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <a href="https://github.com/YifanYang2000/Pong" target="_blank"><button class="btn_git">Learn more</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <br>
+            <br>
+            <hr class="color">
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <h2 id="work">Work Experience</h2>
+            <br>
+            <p>...</p>
+        </div>
+    </div>
+
+    <div class="water"></div>
+
+    <div class="row">
+        <div class="side_left"></div>
+        <div class="side_right"></div>
+        <div class="main">
+            <br>
+            <h2 id="about">About</h2>
+            <br>
+            <p>...</p>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>

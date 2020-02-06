@@ -1,117 +1,199 @@
 * {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-family: 'Unna', serif;
-    box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Unna', serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebfaf9;
+}
+
+hr.color {
+  border-top: solid 1.5px rgb(56, 209, 199, .4);
+}
+
+h2 {
+  font-size: 40px;
+  color: #38d1c7;
+}
+
+p {
+  font-size: 20px;
 }
 
 .intro {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/mereal.png);
-    background-size: cover;
-}
-
-/* Buttons */
-.btn {
-    background-color: #38d1c7;
-    border: none;
-    color: aliceblue;
-    padding: 0px 0px;
-    font-size: 40px;
-  }
-
-.btn2 {
-    background-color: #38d1c7;
-    border: none;
-    color: aliceblue;
-    padding: 0px 10px;
-    font-size: 40px;
-}
-
-.btn:hover {
-    color: RoyalBlue;
-}
-
-.btn2:hover {
-    color: RoyalBlue;
-}
-
-/* Navigation bar */
-#nav {
-  overflow: hidden;
-  background-color: #9ce8e3;
-  /* background-color: #1f736d; */
-}
-
-#nav a {
-  float: right;
-  display: block;
-  color: aliceblue;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 28px;
+  display: flex;
+  align-items: center;
   font-weight: bold;
-}
-
-#nav a:hover {
-  color: #38d1c7;
-}
-  
-.sticky {
-  position: fixed;
-  top: 0;
   width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-  /* Positioning */
-.side {
-    float: left;
-    width: 12%;
-    padding: 15px;
-    background-color: #9ce8e3;
-  }
-
-.row_1 {
-    float:left;
-    width: 76%;
-    padding: 15px;
-    background-color: #9ce8e3;
-}
-
-.row_2 {
-    float: left;
-    width: 26%;
-    padding: 15px;
-    background-color: a#9ce8e3;
-}
-
-.row_3 {
-    float: left;
-    width: 50%;
-    padding: 15px;
-    background-color: #9ce8e3;
-}
-
-.row_3 {
-    float: left;
-    width: 25.33%;
-    padding: 15px;
-    background-color: #9ce8e3
+  height: 100vh;
+  background-image: url(img/mereal.png);
+  background-size: cover;
 }
 
 #title {
-    color: aliceblue;
-    font-size: 90px;
-    padding: 8px 24px;
-    text-align: left;
+  color: aliceblue;
+  font-size: 90px;
+  padding: 8px 24px;
+  text-align: left;
+}
+
+
+
+/* Projects */
+.container {
+  width: 60%;
+  position: relative;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 370px;
+}
+
+.container .left {
+  color: #38d1c7;
+  top: 47%;
+  left: 1.5%;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  font-size: 40px;
+}
+
+.container .left:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .right {
+  color: #38d1c7;
+  top: 47%;
+  left: 93%;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  font-size: 40px;
+}
+
+.container .right:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.des {
+  width: 35%;
+  float: right;
+}
+
+.btn_git {
+  color: #fff;
+  background-color: #38d1c7;
+  border: #38d1c7 2px solid;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.btn_git:hover {
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+/* Buttons */
+.btn {
+  background-color: #38d1c7;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding-right: 20px;
+  font-size: 40px;
+}
+
+.btn:hover {
+  color: royalblue;
+  cursor: pointer;
+}
+
+
+
+/* Navigation bar */
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  transition: top 0.3s;
+  background-color: #38d1c7;
+  z-index: 500;
+}
+
+#nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 31px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 5px 0px -2px #fff;
+}
+
+#nav a:hover {
+  color: black;
+  box-shadow: 0 5px 0px -2px #000;
+}
+
+
+
+/* Positioning */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.side_left {
+  float: left;
+  width: 12%;
+  padding: 15px;
+}
+
+.side_right {
+  float: right;
+  width: 12%;
+  padding: 15px;
+}
+
+.main {
+  float:left;
+  width: 76%;
+  padding: 15px;
+}
+
+.pro_des {
+  width: 60%;
+  float: right;
+}
+
+
+
+.water {
+  background-image: url(img/water.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 40%;
+  height: 600px;
 }
